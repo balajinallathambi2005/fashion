@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fashion store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="fashion.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+    <h1  class="head">Fashion store</h1>
+    <div class="links">
+        <a class="links" href="fashion.html">Home</a>
+        <a class="links" href="collection.html">Collection</a>
+        <a class="links" href="contact.html">Contact</a>
+    </div>
+    <div class="toggle" onclick="opennav()">
+         <i class="fa-solid fa-bars" ></i>
+
+    </div>
+</nav>
+<nav id="sidenavbar">
+    <p class="xmark" onclick="closenav()">
+    <i class="fa-solid fa-xmark"></i>
+    </p>
+     <div class="side-navbar-links">
+        <a class="side-navbar-links" href="fashion.html">Home</a>
+        <a class="side-navbar-links" href="collection.html">Collection</a>
+        <a class="side-navbar-links" href="contact.html">Contact</a>
+      </div>
+    </nav>
+    <div class="stunning">
+    <div >
+        <h1>level up your style</h1>
+        <p>with stunning clothes</p>
+        <button class="shop">shop now</button>
+    </div>
+    <div class="headimg">
+        
+        <img    src="fashion1.jpg">
+    </div>
+    </div>
+    <div class="customer">
+          <h1>we provide best <br>
+            customer experience
+          </h1>
+          <p>|| we ensure that our customer have the best shopping experience</p>
+    </div>
+    <div class="newarrival">
+    <div class="cusexperience">
+        <i class="fa-solid fa-face-smile"></i>
+        <h2>satisfaction customer</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur rem maxime a nisi quidem soluta.
+        </p>
+    </div>
+    
+    <div class="cusexperience">
+        <i class="fa-solid fa-broom"></i>
+        <h2>new arrival everyday
+        </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officiis totam nostrum optio dicta? Molestiae!
+        </p>
+    </div>
+    
+    <div class="cusexperience">
+        <i class="fa-solid fa-truck"></i>
+        <h2>fast & free shipping</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum exercitationem, eaque nihil tempore hic quos?
+        </p>
+    </div>
+    </div>
+    
+        <h1>New Arrival</h1>
+    <div class="arrival">
+        <div class="arrivalcontainer">
+            <img src="fashion2.jpg">
+            <button>shop now <i class="fa-solid fa-arrow-right"></i> </button>
+        </div>
+    <div class="arrivalcontainer"><img src="fashion3.jpg">
+      <button>shop now <i class="fa-solid fa-arrow-right"></i> </button></div>
+    <div class="arrivalcontainer"><img src="fashion4.jpg">  <button>shop now <i class="fa-solid fa-arrow-right"></i> </button></div>
+    <div class="arrivalcontainer"><img src="fashion5.jpg">  <button>shop now <i class="fa-solid fa-arrow-right"></i> </button>/</div>
+       
+    </div>
+    <h1 class="most">Most wanted</h1>
+    <div class="arrival">
+        <div class="arrivalcontainer">
+            <img src="fashion10.jpg">
+            <button>shop now <i class="fa-solid fa-arrow-right"></i> </button>
+        </div>
+    <div class="arrivalcontainer"><img src="fashion9.jpg">
+      <button>shop now <i class="fa-solid fa-arrow-right"></i> </button></div>
+    <div class="arrivalcontainer"><img src="fashion1.jpg">  <button>shop now <i class="fa-solid fa-arrow-right"></i> </button></div>
+    <div class="arrivalcontainer"><img src="fashion2.jpg">  <button>shop now <i class="fa-solid fa-arrow-right"></i> </button>/</div>
+       
+    </div>
+    <div class="newsletter">
+    <h1>Join our news letter</h1>
+    <p>signup for our email newspaper to get exclusive discount,updates and more</p>
+    <input class="inputforemail"><br>
+    <button class="subscribebutton">subscribe <i class="fa-solid fa-arrow-right"></i></button>
+     </div>
+     <div class="fashion-com">
+        <h1>fashion</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, saepe?</p>
+        
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <p>@ 2025 fashion.com</p>
+     </div>
+    <script>
+        var sidenav = document.getElementById("sidenavbar")
+           function opennav()
+           {
+            sidenav.style.left = "0%"
+           }
+           function closenav()
+           {
+            sidenav.style.left = "-56%"
+           }
+
+ 
+    </script>
+</body>
+</html>
