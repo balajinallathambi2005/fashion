@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <nav class="cnavbar">
+    <h1  class="head">Fashion store</h1>
+    <div class="links">
+        <a class="links" href="fashion.html">Home</a>
+        <a class="links" href="collection.html">Collection</a>
+        <a class="links" href="contact.html">Contact</a>
+    </div>
+    <div class="toggle" onclick="opennav()">
+         <i class="fa-solid fa-bars" ></i>
+
+    </div>
+    
+<nav id="sidenavbar">
+    <p class="xmark" onclick="closenav()">
+    <i class="fa-solid fa-xmark"></i>
+    </p>
+     <div class="side-navbar-links">
+        <a class="side-navbar-links" href="fashion.html">Home</a>
+        <a class="side-navbar-links" href="collection.html">Collection</a>
+        <a class="side-navbar-links" href="contact.html">Contact</a>
+      </div>
+    </nav>
+</nav>
+<nav class="Contact-page">
+    <div>
+        
+        <div class="Contact-page-input">
+        <h1 class="head">Contact Us</h1>
+        <p>Name:</p>
+        <input class="nameinpur">
+        </div class="Contact-page-input">
+        <div class="Contact-page-input"> 
+        <p>Email:</p>
+        <input class="nameinpur">
+        </div>
+        <div class="Contact-page-input">
+        <p>Message:</p>
+        <textarea class="nameinpur"></textarea><br>
+        </div>
+        <button class="Submitbutton">Submit</button>
+    </div>
+
+</nav>
+    
+ <div class="fashion-com">
+        <h1>fashion</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, saepe?</p>
+        
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <p>@ 2025 fashion.com</p>
+     </div>
+</body>
+<script>
+       var sidenav = document.getElementById("sidenavbar")
+           function opennav()
+           {
+            sidenav.style.left = "0%"
+           }
+           function closenav()
+           {
+            sidenav.style.left = "-60%"
+           }
+</script>
+</html>

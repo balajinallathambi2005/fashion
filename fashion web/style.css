@@ -1,0 +1,261 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    display: flex;
+    background-color: darkgray;
+    padding: 20px;
+    justify-content: space-between;
+}
+.cnavbar{
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    justify-content: space-between;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.links a{
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+
+}
+.links a:hover{
+    text-decoration:underline;
+    
+}
+.side-navbabr-links{
+    background-color: violet;
+     width: 200px;
+     height: 100%;
+        
+}
+#sidenavbar{
+    background-color: slateblue;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0%;
+    left: -56%;
+    padding: 20px;
+    transition: 2s;
+}
+.xmark{
+    text-align: right;
+}
+.side-navbar-links{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+.stunning{
+    justify-content: center;
+    display: flex;
+    padding: 40px;
+    gap: 30px;
+}
+.shop{
+    padding: 10px;
+    background-color: grey;
+    margin-top: 10px;
+    border: none;
+}
+.shop:hover{
+    border: black 1px solid;
+    cursor: pointer;
+}
+.customer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 20px;
+}
+.side-navbar-links a:hover{
+    text-decoration: underline;
+}
+.cusexperience{
+    background-color:aliceblue;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin: 10px;
+
+}
+.newarrival{
+    display: flex;
+}
+.arrival{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.arrivalcontainer{
+    position: relative;
+    flex-basis: 20%;
+    padding-top: 30px;
+    
+}
+.most{
+    padding-top: 20px;
+}
+.arrivalcontainer button{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: darkgray;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    border-radius: 8px;    
+}
+.arrivalcontainer button:hover{
+    border: 1px black solid;
+    background-color:transparent;
+    cursor: pointer;
+}
+.shopbutton{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+    position: absolute;
+}
+.newsletter{
+    text-align: center;
+   padding-top: 10px;
+}
+.inputforemail{
+    width: 1000px;
+    border: solid black 2px;
+    padding: 8px;
+    margin: 10px;
+}
+.subscribebutton{
+    padding: 8px;
+    background-color: darkgrey;
+    border: none;
+    border-radius: 4px;
+}
+.subscribebutton:hover{
+    cursor: pointer;
+    border: solid black 1px;
+    
+}
+.fashion-com{
+    padding: 20px;
+    margin-top: 20px;
+    background-color: darkgray;
+    width: 100%;
+    right: 0%;
+    
+}
+
+.searchinputsec{
+    margin-top: 10px;
+}
+.searchinput{
+    
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+.searchinput-input{
+   width: 100%;
+   border: none;
+   background-color: transparent;
+}
+.searchinput-input:focus{
+    outline: none;
+}
+.products{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+    text-align: center;
+    margin-top: 15px;
+}
+.Contact-page{
+    background-color: darkgray;
+    padding: 30px;
+    width: 75%;
+    margin-left: 12%;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.nameinpur{
+    width: 90%;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+
+}
+.nameinpur:focus{
+    outline: none;
+}
+.Contact-page-input{
+    padding: 20px;
+}
+.head{
+    padding-bottom: 20px;
+}
+.Submitbutton{
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 45%;
+    background-color:turquoise;
+    border: none;
+    border-radius: 5px;
+}
+.Submitbutton:hover{
+    cursor: pointer;
+    border: solid black 1px;
+}
+@media screen and (max-width:700px) {
+    
+    .links a{
+        display: none;
+    }
+    .toggle{
+        display:block;
+    }
+    .side-navbar{
+        display: block;
+    }
+    .headimg{
+        display: none;
+    }
+    .newarrival{
+        flex-direction: column;
+        
+    }
+    .inputforemail{
+        width: 600px;
+    }
+    .fashion-com{
+        width: 600px;
+    }
+    .products{
+        flex-wrap: wrap;
+        
+
+    }
+    
+}
+@media screen and (min-width:700px){
+    .toggle{
+        display: none;
+    }
+    
+    
+    
+}
