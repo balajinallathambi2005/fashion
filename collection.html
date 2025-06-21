@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    
+    <nav class="cnavbar">
+    <h1  class="head">Fashion store</h1>
+    <div class="links">
+        <a class="links" href="fashion.html">Home</a>
+        <a class="links" href="collection.html">Collection</a>
+        <a class="links" href="contact.html">Contact</a>
+    </div>
+    <div class="toggle" onclick="opennav()">
+         <i class="fa-solid fa-bars" ></i>
+
+    </div>
+    
+<nav id="sidenavbar">
+    <p class="xmark" onclick="closenav()">
+    <i class="fa-solid fa-xmark"></i>
+    </p>
+     <div class="side-navbar-links">
+        <a class="side-navbar-links" href="fashion.html">Home</a>
+        <a class="side-navbar-links" href="collection.html">Collection</a>
+        <a class="side-navbar-links" href="contact.html">Contact</a>
+      </div>
+    </nav>
+</nav>
+<div class="searchinputsec">
+    <form class="searchinput">
+    <input placeholder="search" class="searchinput-input" >
+    <i class="fa-solid fa-search" ></i>
+    </form>
+    <div class="product">
+        <div class="products">
+        <div class="ccontainer">
+            <img src="fashion8.jpg">
+             <h2>trackpants</h2>
+        </div>
+    <div class="ccontainer"><img src="fashion2.jpg"><h2>hoodie</h2>
+       </div>
+    <div class="ccontainer"><img src="fashion5.jpg">   <h2>trending jeans</h2></div>
+    <div class="ccontainer"><img src="fashion11.jpg">   <h2>baggy pants</h2></div>
+       </div>
+    
+         <div class="products">
+        <div class="ccontainer">
+            <img src="fashion10.jpg">
+             <h2>full wear</h2>
+        </div>
+    <div class="ccontainer"><img src="fashion3.jpg">
+    <h2>white dresses</h2>
+       </div>
+<div class="ccontainer"><img src="fashion4.jpg"> <h2>black dress</h2>  </div>
+    <div class="ccontainer"><img src="fashion7.jpg">  <h2>boys bags</h2></div>
+</div>
+</div>
+ <div class="fashion-com">
+        <h1>fashion</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, saepe?</p>
+        
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <p>@ 2025 fashion.com</p>
+     </div>
+</body>
+<script>
+    
+        var sidenav = document.getElementById("sidenavbar")
+           function opennav()
+           {
+            sidenav.style.left = "0%"
+           }
+           function closenav()
+           {
+            sidenav.style.left = "-60%"
+           }
+
+ 
+    var productcontainer = document.querySelector(".product");
+    var productlist = productcontainer.querySelectorAll("div.ccontainer");
+    var searchInput = document.querySelector(".searchinput-input");
+
+    searchInput.addEventListener("keyup", function(event) {
+        var enteredvalue = event.target.value.toUpperCase();
+        for (var count = 0; count < productlist.length; count++) {
+            var productname = productlist[count].querySelector("h2").textContent;
+            if (productname.toUpperCase().indexOf(enteredvalue) > -1) {
+                productlist[count].style.display = "block";
+            } else {
+                productlist[count].style.display = "none";
+            }
+        }
+    });
+</script>
+
+</html>
